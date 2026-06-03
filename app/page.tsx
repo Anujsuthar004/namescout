@@ -34,9 +34,9 @@ export default function Home() {
           The real cost of a domain — not the year-1 bait.
         </h1>
         <p className="mt-3 text-black/60 dark:text-white/60 max-w-2xl mx-auto">
-          Compare registration <em>and</em> renewal prices across registrars.
-          NameScout shows the true 5-year cost so a cheap first year can&rsquo;t
-          fool you.
+          See the true 5-year cost of a domain — registration <em>plus</em>{" "}
+          renewals — so a cheap first year can&rsquo;t fool you. Focused on the
+          registrars known for <strong>flat, predictable pricing</strong>.
         </p>
 
         <form
@@ -65,6 +65,14 @@ export default function Home() {
         <p className="mt-2 text-xs text-black/40 dark:text-white/40">
           Try a bare name to check every TLD, or type a full domain like{" "}
           <code>acme.io</code>.
+        </p>
+        <p className="mt-4 text-xs text-black/40 dark:text-white/40">
+          Currently comparing{" "}
+          <span className="text-black/60 dark:text-white/60">Cloudflare</span>,{" "}
+          <span className="text-black/60 dark:text-white/60">Porkbun</span> &{" "}
+          <span className="text-black/60 dark:text-white/60">Dynadot</span> — the
+          registrars with flat renewal pricing, where the 5-year cost is what you
+          actually pay.
         </p>
       </section>
 
