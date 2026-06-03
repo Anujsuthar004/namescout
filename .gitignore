@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# The price snapshot (data/prices.json) IS committed — it seeds the deployed
+# site and is refreshed hourly by the sync GitHub Action ("git as database").
 
 # vercel
 .vercel

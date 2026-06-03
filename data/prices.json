@@ -1,0 +1,392 @@
+[
+  {
+    "tld": "gg",
+    "registrar": "porkbun",
+    "register_price": 51.8,
+    "renew_price": 51.8,
+    "transfer_price": 51.8,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "app",
+    "registrar": "porkbun",
+    "register_price": 10.81,
+    "renew_price": 14.93,
+    "transfer_price": 14.93,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "dev",
+    "registrar": "porkbun",
+    "register_price": 10.81,
+    "renew_price": 12.87,
+    "transfer_price": 12.87,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "shop",
+    "registrar": "porkbun",
+    "register_price": 2.06,
+    "renew_price": 31.41,
+    "transfer_price": 31.41,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "com",
+    "registrar": "porkbun",
+    "register_price": 11.08,
+    "renew_price": 11.08,
+    "transfer_price": 11.08,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "net",
+    "registrar": "porkbun",
+    "register_price": 12.52,
+    "renew_price": 12.52,
+    "transfer_price": 12.52,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "org",
+    "registrar": "porkbun",
+    "register_price": 7.98,
+    "renew_price": 11.84,
+    "transfer_price": 11.84,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "co",
+    "registrar": "porkbun",
+    "register_price": 9.58,
+    "renew_price": 27.09,
+    "transfer_price": 27.09,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "site",
+    "registrar": "porkbun",
+    "register_price": 1.96,
+    "renew_price": 28.84,
+    "transfer_price": 28.84,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "online",
+    "registrar": "porkbun",
+    "register_price": 1.96,
+    "renew_price": 28.84,
+    "transfer_price": 28.84,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "store",
+    "registrar": "porkbun",
+    "register_price": 2.57,
+    "renew_price": 43.77,
+    "transfer_price": 43.77,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "tech",
+    "registrar": "porkbun",
+    "register_price": 6.99,
+    "renew_price": 50.98,
+    "transfer_price": 50.98,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "xyz",
+    "registrar": "porkbun",
+    "register_price": 1,
+    "renew_price": 12.98,
+    "transfer_price": 12.98,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "design",
+    "registrar": "porkbun",
+    "register_price": 10.81,
+    "renew_price": 46.86,
+    "transfer_price": 46.86,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "studio",
+    "registrar": "porkbun",
+    "register_price": 11.84,
+    "renew_price": 25.23,
+    "transfer_price": 25.23,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "me",
+    "registrar": "porkbun",
+    "register_price": 8.8,
+    "renew_price": 17.27,
+    "transfer_price": 17.27,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "ai",
+    "registrar": "porkbun",
+    "register_price": 82.7,
+    "renew_price": 82.7,
+    "transfer_price": 165.09,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "io",
+    "registrar": "porkbun",
+    "register_price": 28.12,
+    "renew_price": 51.8,
+    "transfer_price": 51.8,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "sh",
+    "registrar": "porkbun",
+    "register_price": 31.2,
+    "renew_price": 46.65,
+    "transfer_price": 46.65,
+    "currency": "USD",
+    "promo": true,
+    "fetched_at": "2026-06-03T06:11:31.779Z"
+  },
+  {
+    "tld": "com",
+    "registrar": "cloudflare",
+    "register_price": 10.44,
+    "renew_price": 10.44,
+    "transfer_price": 10.44,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "net",
+    "registrar": "cloudflare",
+    "register_price": 12.18,
+    "renew_price": 12.18,
+    "transfer_price": 12.18,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "org",
+    "registrar": "cloudflare",
+    "register_price": 10.1,
+    "renew_price": 10.1,
+    "transfer_price": 10.1,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "io",
+    "registrar": "cloudflare",
+    "register_price": 38,
+    "renew_price": 38,
+    "transfer_price": 38,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "co",
+    "registrar": "cloudflare",
+    "register_price": 24,
+    "renew_price": 24,
+    "transfer_price": 24,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "ai",
+    "registrar": "cloudflare",
+    "register_price": 65,
+    "renew_price": 65,
+    "transfer_price": 65,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "app",
+    "registrar": "cloudflare",
+    "register_price": 12.18,
+    "renew_price": 12.18,
+    "transfer_price": 12.18,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "dev",
+    "registrar": "cloudflare",
+    "register_price": 12.18,
+    "renew_price": 12.18,
+    "transfer_price": 12.18,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "me",
+    "registrar": "cloudflare",
+    "register_price": 18,
+    "renew_price": 18,
+    "transfer_price": 18,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "xyz",
+    "registrar": "cloudflare",
+    "register_price": 10,
+    "renew_price": 10,
+    "transfer_price": 10,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "gg",
+    "registrar": "cloudflare",
+    "register_price": 60,
+    "renew_price": 60,
+    "transfer_price": 60,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "so",
+    "registrar": "cloudflare",
+    "register_price": 55,
+    "renew_price": 55,
+    "transfer_price": 55,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "sh",
+    "registrar": "cloudflare",
+    "register_price": 36,
+    "renew_price": 36,
+    "transfer_price": 36,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "tech",
+    "registrar": "cloudflare",
+    "register_price": 45,
+    "renew_price": 45,
+    "transfer_price": 45,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "studio",
+    "registrar": "cloudflare",
+    "register_price": 28,
+    "renew_price": 28,
+    "transfer_price": 28,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "design",
+    "registrar": "cloudflare",
+    "register_price": 38,
+    "renew_price": 38,
+    "transfer_price": 38,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "store",
+    "registrar": "cloudflare",
+    "register_price": 55,
+    "renew_price": 55,
+    "transfer_price": 55,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "shop",
+    "registrar": "cloudflare",
+    "register_price": 32,
+    "renew_price": 32,
+    "transfer_price": 32,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "site",
+    "registrar": "cloudflare",
+    "register_price": 30,
+    "renew_price": 30,
+    "transfer_price": 30,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  },
+  {
+    "tld": "online",
+    "registrar": "cloudflare",
+    "register_price": 35,
+    "renew_price": 35,
+    "transfer_price": 35,
+    "currency": "USD",
+    "promo": false,
+    "fetched_at": "2026-06-03T06:11:31.783Z"
+  }
+]
