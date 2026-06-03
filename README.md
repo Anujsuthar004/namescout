@@ -85,17 +85,29 @@ and upserts to the store. Automated hourly via `.github/workflows/sync.yml`
 ```
 app/
   page.tsx                 search UI (client)
+  optimizer/page.tsx       renewal optimizer UI (paste-your-domains)
   api/search/route.ts      search endpoint (prices + availability + offers)
+  api/optimize/route.ts    renewal optimizer endpoint
   go/[registrar]/route.ts  affiliate-aware outbound redirect
   compare/[tld]/page.tsx   pre-rendered per-TLD SEO landing pages
 lib/
   types.ts                 unified schema + adapter contracts
   registrars/              porkbun · cloudflare · dynadot adapters + meta
+                           reference.ts: typical renewals + RDAP name matching
   store.ts                 Supabase / local-JSON pluggable store
-  rdap.ts                  availability via IANA RDAP bootstrap
+  rdap.ts                  availability + registrar/expiry via IANA bootstrap
   search.ts                ties prices + availability + ranking together
+  optimizer.ts             detect current registrar/expiry → cheapest renewal → savings
   scoring.ts               5-year TCO + ranking
   affiliate.ts             affiliate link builder (independent of feeds)
   tlds.ts                  covered TLD catalog + query parsing
 scripts/sync.ts            the price sync job
 ```
+
+## Features
+
+- **Compare** (`/`) — search a name across TLDs, ranked by true 5-year cost.
+- **Renewal optimizer** (`/optimizer`) — paste domains you own; RDAP detects the
+  current registrar + expiry date for each, and we show where to renew/transfer
+  to save, with estimated 5-year savings. The differentiated, under-served bit.
+- **Per-TLD SEO pages** (`/compare/[tld]`) — pre-rendered price tables.

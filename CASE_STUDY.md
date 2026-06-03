@@ -99,12 +99,23 @@ Decisions worth calling out:
 
 ---
 
-## 4. What I'd do differently / next
+## 4. The differentiated bet: the renewal optimizer
 
-- **If pursuing it seriously:** abandon the price-table race and pivot to a
-  *portfolio renewal optimizer* ("paste your domains → where to transfer to save
-  $X, and when each expires") — an under-served, stateful problem the comparison
-  sites don't solve.
+Rather than compete on the saturated price table, NameScout's `/optimizer` goes
+after the under-served problem the comparison sites *don't* solve: **a user pastes
+the domains they own**, and for each we use **RDAP to detect the current registrar
+and expiry date**, then surface the cheapest renewal and the estimated 5-year
+savings from moving. It doubles as a single place to see every renewal date.
+
+Why this is a better bet than the price table: it's a *workflow*, not a lookup;
+it reuses data the incumbents don't surface (your registrar + renewal calendar);
+and the "you're overpaying at GoDaddy" insight is concrete and personal. The honest
+limitation: savings against untracked registrars use *typical* renewal estimates
+(clearly labelled), since we only have live feeds for a few registrars.
+
+## 5. What I'd do next
+
+- **Accounts + alerts:** persist a portfolio, email 60/30/7 days before expiry.
 - **For breadth:** the only path to incumbent-level coverage is compiling public
   pricing pages (fragile, ToS-sensitive), not clean APIs.
 - **Honest monetization:** lead with the cheapest option even when it pays
@@ -112,7 +123,7 @@ Decisions worth calling out:
 
 ---
 
-## 5. Stack
+## 6. Stack
 
 Next.js 16 (App Router, Turbopack) · TypeScript · Tailwind v4 · Supabase-or-local
 store · RDAP · GitHub Actions · Vercel. See [`README.md`](./README.md) to run it.

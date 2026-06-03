@@ -1,16 +1,22 @@
 import { normalizeTld } from "@/lib/tlds";
 
 /**
- * Domain availability via RDAP — the ground truth. RDAP servers are per-TLD,
+ * RDAP lookups — the ground truth for domain status. RDAP servers are per-TLD,
  * so we resolve the right server through IANA's bootstrap registry
  * (https://data.iana.org/rdap/dns.json), then query {server}/domain/{name}.
  *
  *   404  -> not registered  -> AVAILABLE
- *   200  -> registered      -> TAKEN
- *   else / no server / error -> UNKNOWN (UI shows prices anyway)
+ *   200  -> registered      -> TAKEN (and the body tells us registrar + expiry)
+ *   else / no server / error -> UNKNOWN
  */
 
 export type Availability = true | false | "unknown";
+
+export interface RdapInfo {
+  registered: boolean | "unknown";
+  registrarName: string | null;
+  expiry: string | null; // ISO date string
+}
 
 const BOOTSTRAP_URL = "https://data.iana.org/rdap/dns.json";
 const TIMEOUT_MS = 4000;
@@ -57,35 +63,123 @@ async function fetchWithTimeout(url: string): Promise<Response> {
   }
 }
 
-export async function checkAvailability(domain: string): Promise<Availability> {
+/** Raw RDAP query: returns the HTTP status and parsed body (if any). */
+async function rdapQuery(
+  domain: string,
+): Promise<{ status: number; body: RdapDomain | null }> {
   const tld = normalizeTld(domain.slice(domain.lastIndexOf(".") + 1));
   const map = await loadBootstrap();
   const base = map.get(tld);
-  if (!base) return "unknown"; // TLD not in RDAP bootstrap (e.g. some ccTLDs)
-
+  if (!base) return { status: 0, body: null };
   try {
     const res = await fetchWithTimeout(`${base}/domain/${domain}`);
-    if (res.status === 404) return true; // available
-    if (res.status === 200) return false; // taken
-    return "unknown";
+    let body: RdapDomain | null = null;
+    if (res.status === 200) {
+      body = (await res.json().catch(() => null)) as RdapDomain | null;
+    }
+    return { status: res.status, body };
   } catch {
-    return "unknown";
+    return { status: -1, body: null };
   }
 }
 
-/** Check many domains with bounded concurrency. */
+export async function checkAvailability(domain: string): Promise<Availability> {
+  const { status } = await rdapQuery(domain);
+  if (status === 404) return true; // available
+  if (status === 200) return false; // taken
+  return "unknown";
+}
+
+/** Full lookup: status + current registrar + expiry date (for owned domains). */
+export async function lookupDomain(domain: string): Promise<RdapInfo> {
+  const { status, body } = await rdapQuery(domain);
+  if (status === 404) {
+    return { registered: false, registrarName: null, expiry: null };
+  }
+  if (status !== 200 || !body) {
+    return { registered: "unknown", registrarName: null, expiry: null };
+  }
+  return {
+    registered: true,
+    registrarName: extractRegistrar(body),
+    expiry: extractExpiry(body),
+  };
+}
+
+/** Check many domains' availability with bounded concurrency. */
 export async function checkMany(
   domains: string[],
   concurrency = 8,
 ): Promise<Record<string, Availability>> {
-  const result: Record<string, Availability> = {};
+  return mapConcurrent(domains, concurrency, checkAvailability);
+}
+
+/** Full lookups for many domains with bounded concurrency. */
+export async function lookupMany(
+  domains: string[],
+  concurrency = 6,
+): Promise<Record<string, RdapInfo>> {
+  return mapConcurrent(domains, concurrency, lookupDomain);
+}
+
+async function mapConcurrent<T>(
+  items: string[],
+  concurrency: number,
+  fn: (item: string) => Promise<T>,
+): Promise<Record<string, T>> {
+  const result: Record<string, T> = {};
   let i = 0;
-  const workers = Array.from({ length: Math.min(concurrency, domains.length) }, async () => {
-    while (i < domains.length) {
-      const d = domains[i++];
-      result[d] = await checkAvailability(d);
-    }
-  });
+  const workers = Array.from(
+    { length: Math.min(concurrency, items.length) },
+    async () => {
+      while (i < items.length) {
+        const item = items[i++];
+        result[item] = await fn(item);
+      }
+    },
+  );
   await Promise.all(workers);
   return result;
+}
+
+// --- RDAP body parsing -----------------------------------------------------
+
+interface RdapVcardEntity {
+  roles?: string[];
+  handle?: string;
+  vcardArray?: [string, Array<[string, object, string, string]>];
+  publicIds?: { type?: string; identifier?: string }[];
+  entities?: RdapVcardEntity[];
+}
+interface RdapDomain {
+  events?: { eventAction?: string; eventDate?: string }[];
+  entities?: RdapVcardEntity[];
+}
+
+function extractExpiry(body: RdapDomain): string | null {
+  const ev = body.events?.find((e) => e.eventAction === "expiration");
+  return ev?.eventDate ?? null;
+}
+
+function extractRegistrar(body: RdapDomain): string | null {
+  const reg = findEntityWithRole(body.entities, "registrar");
+  if (!reg) return null;
+  // Preferred: the formatted name ("fn") from the vCard.
+  const vcard = reg.vcardArray?.[1];
+  const fn = vcard?.find((item) => item[0] === "fn");
+  if (fn && typeof fn[3] === "string" && fn[3].trim()) return fn[3].trim();
+  return reg.handle ?? null;
+}
+
+function findEntityWithRole(
+  entities: RdapVcardEntity[] | undefined,
+  role: string,
+): RdapVcardEntity | null {
+  if (!entities) return null;
+  for (const e of entities) {
+    if (e.roles?.includes(role)) return e;
+    const nested = findEntityWithRole(e.entities, role);
+    if (nested) return nested;
+  }
+  return null;
 }

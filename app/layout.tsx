@@ -31,13 +31,24 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <header className="border-b border-black/10 dark:border-white/10">
-          <div className="mx-auto max-w-5xl px-4 py-4 flex items-center gap-2">
+          <div className="mx-auto max-w-5xl px-4 py-4 flex items-center gap-4">
             <Link href="/" className="font-semibold text-lg tracking-tight">
               Name<span className="text-emerald-600 dark:text-emerald-400">Scout</span>
             </Link>
-            <span className="text-xs text-black/50 dark:text-white/50 hidden sm:inline">
-              true cost of domain ownership
-            </span>
+            <nav className="flex items-center gap-4 text-sm">
+              <Link
+                href="/"
+                className="text-black/60 dark:text-white/60 hover:text-foreground"
+              >
+                Compare
+              </Link>
+              <Link
+                href="/optimizer"
+                className="text-black/60 dark:text-white/60 hover:text-foreground"
+              >
+                Renewal optimizer
+              </Link>
+            </nav>
           </div>
         </header>
 
