@@ -1,195 +1,5 @@
 [
   {
-    "tld": "gg",
-    "registrar": "porkbun",
-    "register_price": 51.8,
-    "renew_price": 51.8,
-    "transfer_price": 51.8,
-    "currency": "USD",
-    "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "app",
-    "registrar": "porkbun",
-    "register_price": 8.75,
-    "renew_price": 14.93,
-    "transfer_price": 14.93,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "dev",
-    "registrar": "porkbun",
-    "register_price": 8.75,
-    "renew_price": 12.87,
-    "transfer_price": 12.87,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "shop",
-    "registrar": "porkbun",
-    "register_price": 2.06,
-    "renew_price": 31.41,
-    "transfer_price": 31.41,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "com",
-    "registrar": "porkbun",
-    "register_price": 11.08,
-    "renew_price": 11.08,
-    "transfer_price": 11.08,
-    "currency": "USD",
-    "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "net",
-    "registrar": "porkbun",
-    "register_price": 12.52,
-    "renew_price": 12.52,
-    "transfer_price": 12.52,
-    "currency": "USD",
-    "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "org",
-    "registrar": "porkbun",
-    "register_price": 7.98,
-    "renew_price": 11.84,
-    "transfer_price": 11.84,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "co",
-    "registrar": "porkbun",
-    "register_price": 15.76,
-    "renew_price": 31.2,
-    "transfer_price": 31.2,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "site",
-    "registrar": "porkbun",
-    "register_price": 1.96,
-    "renew_price": 28.84,
-    "transfer_price": 28.84,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "online",
-    "registrar": "porkbun",
-    "register_price": 1.96,
-    "renew_price": 28.84,
-    "transfer_price": 28.84,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "store",
-    "registrar": "porkbun",
-    "register_price": 2.57,
-    "renew_price": 43.77,
-    "transfer_price": 43.77,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "tech",
-    "registrar": "porkbun",
-    "register_price": 6.99,
-    "renew_price": 50.98,
-    "transfer_price": 50.98,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "xyz",
-    "registrar": "porkbun",
-    "register_price": 2.04,
-    "renew_price": 12.98,
-    "transfer_price": 12.98,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "design",
-    "registrar": "porkbun",
-    "register_price": 10.81,
-    "renew_price": 46.86,
-    "transfer_price": 46.86,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "studio",
-    "registrar": "porkbun",
-    "register_price": 11.84,
-    "renew_price": 32.44,
-    "transfer_price": 32.44,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "me",
-    "registrar": "porkbun",
-    "register_price": 17.27,
-    "renew_price": 17.27,
-    "transfer_price": 17.27,
-    "currency": "USD",
-    "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "ai",
-    "registrar": "porkbun",
-    "register_price": 82.7,
-    "renew_price": 82.7,
-    "transfer_price": 165.09,
-    "currency": "USD",
-    "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "io",
-    "registrar": "porkbun",
-    "register_price": 28.12,
-    "renew_price": 51.8,
-    "transfer_price": 51.8,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
-    "tld": "sh",
-    "registrar": "porkbun",
-    "register_price": 31.2,
-    "renew_price": 46.65,
-    "transfer_price": 46.65,
-    "currency": "USD",
-    "promo": true,
-    "fetched_at": "2026-08-05T16:28:56.329Z"
-  },
-  {
     "tld": "com",
     "registrar": "cloudflare",
     "register_price": 10.44,
@@ -197,7 +7,7 @@
     "transfer_price": 10.44,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "net",
@@ -207,7 +17,7 @@
     "transfer_price": 12.18,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "org",
@@ -217,7 +27,7 @@
     "transfer_price": 10.1,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "io",
@@ -227,7 +37,7 @@
     "transfer_price": 38,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "co",
@@ -237,7 +47,7 @@
     "transfer_price": 24,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "ai",
@@ -247,7 +57,7 @@
     "transfer_price": 65,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "app",
@@ -257,7 +67,7 @@
     "transfer_price": 12.18,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "dev",
@@ -267,7 +77,7 @@
     "transfer_price": 12.18,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "me",
@@ -277,7 +87,7 @@
     "transfer_price": 18,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "xyz",
@@ -287,7 +97,7 @@
     "transfer_price": 10,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "gg",
@@ -297,7 +107,7 @@
     "transfer_price": 60,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "so",
@@ -307,7 +117,7 @@
     "transfer_price": 55,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "sh",
@@ -317,7 +127,7 @@
     "transfer_price": 36,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "tech",
@@ -327,7 +137,7 @@
     "transfer_price": 45,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "studio",
@@ -337,7 +147,7 @@
     "transfer_price": 28,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "design",
@@ -347,7 +157,7 @@
     "transfer_price": 38,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "store",
@@ -357,7 +167,7 @@
     "transfer_price": 55,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "shop",
@@ -367,7 +177,7 @@
     "transfer_price": 32,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "site",
@@ -377,7 +187,7 @@
     "transfer_price": 30,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   },
   {
     "tld": "online",
@@ -387,6 +197,6 @@
     "transfer_price": 35,
     "currency": "USD",
     "promo": false,
-    "fetched_at": "2026-08-05T16:28:56.331Z"
+    "fetched_at": "2026-08-05T18:18:38.828Z"
   }
 ]
